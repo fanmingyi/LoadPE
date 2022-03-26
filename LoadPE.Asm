@@ -101,7 +101,7 @@ LoadPe proc
 	add eax,ebx
 	mov @pSecHdr,eax
 	
-	int 3;
+	
 	push [esi].OptionalHeader.AddressOfEntryPoint
 	pop @dwOep
 	mov eax,@hInst

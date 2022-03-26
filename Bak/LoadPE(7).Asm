@@ -43,7 +43,7 @@ LoadPe proc
 	LOCAL @dwIAT:DWORD
 	LOCAL @dwOep:DWORD
 	
-	
+	int 3
 	invoke GetModuleHandle,NULL
 	mov @hInst,eax
 	

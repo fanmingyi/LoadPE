@@ -43,7 +43,7 @@ LoadPe proc
 	LOCAL @dwIAT:DWORD
 	LOCAL @dwOep:DWORD
 	
-	int 3
+	
 	invoke GetModuleHandle,NULL
 	mov @hInst,eax
 	
@@ -101,7 +101,7 @@ LoadPe proc
 	add eax,ebx
 	mov @pSecHdr,eax
 	
-	
+	int 3;
 	push [esi].OptionalHeader.AddressOfEntryPoint
 	pop @dwOep
 	add eax,@hInst

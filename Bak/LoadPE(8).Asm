@@ -108,7 +108,6 @@ LoadPe proc
 	add @dwOep,eax
 	
 	;得到导入表的地址
-
 	lea eax,[esi].OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_IMPORT * sizeof IMAGE_DATA_DIRECTORY ]
 	assume eax:ptr IMAGE_DATA_DIRECTORY
 	

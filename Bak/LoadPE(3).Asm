@@ -104,7 +104,7 @@ LoadPe proc
 	int 3;
 	push [esi].OptionalHeader.AddressOfEntryPoint
 	pop @dwOep
-	add eax,@hInst
+	mov eax,@hInst
 	add @dwOep,eax
 	
 	;得到导入表的地址

@@ -119,13 +119,13 @@ GroupExpand=0,1,1,0
 [BreakPoint]
 0=
 [Find]
-1="@dwOep"
-2="int 3"
-3="@pImpHdr"
-4="int3"
-5="esi"
-6="@pSec"
-7="g_szExeName"
-8="@pSecHdr"
-9="@hInst"
+1="int 3"
+2="@hInst"
+3="@dwOep"
+4="@pImpHdr"
+5="int3"
+6="esi"
+7="@pSec"
+8="g_szExeName"
+9="@pSecHdr"
 10="@lpMapAddr"

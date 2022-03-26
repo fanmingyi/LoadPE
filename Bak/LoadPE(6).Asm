@@ -260,7 +260,7 @@ start:
 	.if eax!=NULL
 		jmp eax
 	.endif
-	jmp eax
+	
  invoke ExitProcess,0
 
 
